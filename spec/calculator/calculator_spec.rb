@@ -7,6 +7,7 @@ describe Calculator, 'Test about calculator' do
     it 'with positive numbers' do
       result = subject.sum(5, 7)
       expect(result).to eq(12)
+        expect(result).not_to eq(1)
     end
 
     it 'negative numbers and float numbers' do
