@@ -1,5 +1,8 @@
 require 'Calculator'
-describe Calculator do
+describe Calculator, 'Test about calculator' do
+  # if case necessary initialize class with params
+  # subject(:subject){Calculator.new(1,2,3)}
+  ###################################################
   context '#sum' do
     it 'with positive numbers' do
       result = subject.sum(5, 7)
@@ -15,7 +18,7 @@ describe Calculator do
       expect(result).to eq(-12.8)
     end
 
-    #ignore teste xit
+    # ignore test xit
     xit 'negative numbers ' do
       result = subject.sum(-5, -7.8)
       expect(result).to eq(-12.8)
